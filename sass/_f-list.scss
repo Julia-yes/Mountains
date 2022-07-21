@@ -1,0 +1,50 @@
+@use '_variables';
+
+.f-list {
+    list-style: none;
+    margin: 0;
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        color: variables.$yellow;
+        margin-bottom: 25px;
+    }
+    &__item {
+        font-style: normal;        
+        padding-bottom: 15px;
+
+        &_last {
+            padding: 0;
+        }
+        
+    }
+    
+    &__link {
+        font-weight: 500;
+        line-height: 32px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .f-list {
+        padding: 0;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .f-list {
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+
+        }
+
+        &__link {
+            line-height: 20px;
+        }
+    }
+}

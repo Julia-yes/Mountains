@@ -1,0 +1,36 @@
+@use '_variables';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px 0 40px;   
+    box-sizing: border-box;
+
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 40px 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 25px 20px 25px;
+        position: fixed;
+        left: 0;
+        top:0;
+        background-color: variables.$background;;
+        z-index: 10;
+        right: 0;
+                
+        &__nav {
+            position: absolute;
+   top: -9999px;
+   left: -9999px;            
+        }
+    }
+}

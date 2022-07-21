@@ -1,0 +1,44 @@
+.f-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__text {
+        padding-top: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__copyright {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .f-left {
+        &__copyright {
+            position: absolute;
+            bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .f-left {
+
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__copyright {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}

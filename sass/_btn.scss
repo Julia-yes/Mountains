@@ -1,0 +1,57 @@
+@use '_variables';
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 1s;
+    cursor: pointer;
+
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+        border-color: variables.$yellow;
+    }
+
+    &:active  &__text {
+        color: variables.$yellow;
+    }
+
+
+    &__text {
+        color: white;
+        font-family: 'Gilroy';
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: 600;
+        transition: color 1s;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .btn {
+        padding: 5px 10px;
+
+        &__text {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+}
+  
+ 

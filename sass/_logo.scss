@@ -1,0 +1,12 @@
+.logo {
+    font-family: "Chronicle";
+    font-size: 32px;
+}
+
+@media screen and (max-width: 576px) {
+
+    .logo {
+        font-size: 26px;
+    }
+}
+ 

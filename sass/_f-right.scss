@@ -1,0 +1,13 @@
+.f-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 210px;   
+
+}
+
+@media screen and (max-width: 1300px) {
+    .f-right {
+        gap: 100px;
+    }
+}

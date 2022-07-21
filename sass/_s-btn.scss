@@ -1,0 +1,47 @@
+@use '_variables';
+
+.s-btn {
+    color: variables.$yellow;;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding-top: 35px;
+    cursor: pointer;
+
+    &:active  &__text {
+        color: #c99826;
+    }
+
+    &:active  &__text_top {
+        color: white;
+        opacity: 50%;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 35px;
+        transition: color .5s, opacity .5s;
+
+        &_top {
+            color: white;
+        }
+    }   
+
+    &__arrow{
+        position: absolute;
+        right: -40px;
+        bottom: 18px;
+    
+
+        &_top {
+            width: 15px;
+            height: 25px;
+            bottom: 0;
+        }
+    }
+}
+  
+ 
