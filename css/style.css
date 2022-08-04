@@ -92,6 +92,14 @@ p {
     width: 90%;
   }
 }
+@media screen and (max-width: 768px) {
+  .background {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-position-y: 70px;
+  }
+}
 .logo {
   font-family: "Chronicle";
   font-size: 32px;
@@ -367,6 +375,7 @@ p {
   .sectioN_top {
     padding: 100px 0 0 0;
     width: 500px;
+    margin-left: 35%;
   }
   .sectioN__title {
     font-size: 50px;
@@ -388,7 +397,8 @@ p {
     padding: 50px 0 50px 70px;
   }
   .sectioN_top {
-    padding: 140px 0 0 0;
+    padding: 200px 0 0 0;
+    margin: 0 auto;
   }
   .sectioN__picture {
     width: 60%;
@@ -421,6 +431,16 @@ p {
     top: -60px;
   }
 }
+@media screen and (max-width: 450px) {
+  .sectioN__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .sectioN__title_top {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
 .main {
   position: relative;
   margin: 0 auto;
@@ -446,10 +466,6 @@ p {
   }
 }
 @media screen and (max-width: 576px) {
-  .main {
-    padding-top: 1100px;
-  }
-
   .main-block {
     padding-bottom: 40px;
   }
@@ -465,10 +481,6 @@ p {
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 576px) {
-  .footer {
     padding-top: 50px;
   }
 }

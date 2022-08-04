@@ -48,10 +48,18 @@ p {
 @media screen and (max-width: 1760px) {
     .wrapper {
         width: 100%;
-
         &_little {        
             width: 90%;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        background-position-y: 70px;
     }
 }
 
