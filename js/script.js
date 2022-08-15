@@ -8,17 +8,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     body.classList.toggle("modal-window");
   });
 
-  let windiwScreen = () => {
-    console.log (window.screen.width)
-    if (window.screen.width > 768) {var myFullpage = new fullpage('#fullpage', {           
-        navigation: true,
-        })}
-    else {
-      fullpage_api.destroy();
-    }
-  }
+  
 
-  window.addEventListener('resize', () => {windiwScreen()})
+  // let windiwScreen = () => {
+  //   if (window.screen.width < 768) {$.scrollify.disable()}
+  // };
+
+  // window.addEventListener('resize', () => {windiwScreen()})
 
 });
 

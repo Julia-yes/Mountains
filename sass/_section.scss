@@ -1,5 +1,13 @@
 @use '_variables';
 
+.section{
+    padding-top: 200px;
+}
+
+.section2{
+    padding-top: 900px;
+}
+
 .sectioN {
     
     width: 630px;
@@ -100,6 +108,14 @@
 }
 
 @media screen and (max-width: 992px) {
+
+    .section {
+        padding-top: 0px;
+    }
+
+    .section2 {
+        padding-top: 50px;
+    }
 
     .sectioN {
         padding: 60px 0 70px 70px;

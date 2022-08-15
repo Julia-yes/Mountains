@@ -92,11 +92,15 @@ p {
     width: 90%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .background {
     width: 100%;
     height: auto;
     background-size: contain;
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
     background-position-y: 70px;
   }
 }
@@ -228,6 +232,7 @@ p {
 }
 .s-btn__text_top {
   color: white;
+  text-decoration: none;
 }
 .s-btn__arrow {
   position: absolute;
@@ -283,6 +288,14 @@ p {
     gap: 6px;
   }
 }
+.section {
+  padding-top: 200px;
+}
+
+.section2 {
+  padding-top: 900px;
+}
+
 .sectioN {
   width: 630px;
   position: relative;
@@ -369,6 +382,14 @@ p {
   }
 }
 @media screen and (max-width: 992px) {
+  .section {
+    padding-top: 0px;
+  }
+
+  .section2 {
+    padding-top: 50px;
+  }
+
   .sectioN {
     padding: 60px 0 70px 70px;
   }

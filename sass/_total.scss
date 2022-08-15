@@ -54,11 +54,16 @@ p {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .background {
         width: 100%;
         height: auto;
         background-size: contain;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background {        
         background-position-y: 70px;
     }
 }
