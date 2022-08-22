@@ -71,6 +71,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -236,7 +240,7 @@ p {
 }
 .s-btn__arrow {
   position: absolute;
-  right: -40px;
+  left: 120px;
   bottom: 18px;
 }
 .s-btn__arrow_top {
